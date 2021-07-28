@@ -4,17 +4,13 @@
 
 ## Table of contents
 
-### Namespaces
-
-- [createConstMap](modules/createConstMap.md)
-
-### Classes
-
-- [default](classes/default.md)
-
 ### Type aliases
 
 - [Constant](modules.md#constant)
+
+### Properties
+
+- [default](modules.md#default)
 
 ### Functions
 
@@ -44,7 +40,24 @@
 
 #### Defined in
 
-[const.ts:6](https://github.com/zimmed/const/blob/f05162f/src/const.ts#L6)
+[const.ts:6](https://github.com/zimmed/const/blob/16363f1/src/const.ts#L6)
+
+## Properties
+
+### default
+
+• **default**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `create` | <K, T\>(`value`: `K`, `__namedParameters`: { `$label?`: `string` ; `label?`: `string`  } & `Partial`<`T`\>) => [`Constant`](modules.md#constant)<`K`\> & `T` |
+| `createMap` | <O\>(`constMap`: `O`, `$label?`: `string`) => { readonly[K in string \| number \| symbol]: K extends string ? Constant<K\> & Omit<O[K], "label" \| "$label"\> : never} & `Iterable`<{ readonly[K in string \| number \| symbol]: K extends string ? Constant<K\> & Omit<O[K], "label" \| "$label"\> : never} extends { [k: string]: infer C;  } ? `C` : `never`\> |
+| `createMapStrict` | <T\>() => <O\>(`constMap`: `O`, `$label?`: `string`) => { readonly[K in string \| number \| symbol]: K extends string ? Constant<K\> & Omit<O[K], "label" \| "$label"\> : never} & `Iterable`<{ readonly[K in string \| number \| symbol]: K extends string ? Constant<K\> & Omit<O[K], "label" \| "$label"\> : never} extends { [k: string]: infer C;  } ? `C` : `never`\> |
+| `createStrictMap` | <T\>() => <O\>(`constMap`: `O`, `$label?`: `string`) => { readonly[K in string \| number \| symbol]: K extends string ? Constant<K\> & Omit<O[K], "label" \| "$label"\> : never} & `Iterable`<{ readonly[K in string \| number \| symbol]: K extends string ? Constant<K\> & Omit<O[K], "label" \| "$label"\> : never} extends { [k: string]: infer C;  } ? `C` : `never`\> |
+| `createTypedMap` | <T\>() => <O\>(`constMap`: `O`, `$label?`: `string`) => { readonly[K in string \| number \| symbol]: K extends string ? Constant<K\> & Omit<O[K], "label" \| "$label"\> : never} & `Iterable`<{ readonly[K in string \| number \| symbol]: K extends string ? Constant<K\> & Omit<O[K], "label" \| "$label"\> : never} extends { [k: string]: infer C;  } ? `C` : `never`\> |
+| `list` | <T\>(...`keys`: `T`[]) => `R` |
 
 ## Functions
 
@@ -72,7 +85,7 @@
 
 #### Defined in
 
-[const.ts:11](https://github.com/zimmed/const/blob/f05162f/src/const.ts#L11)
+[const.ts:11](https://github.com/zimmed/const/blob/16363f1/src/const.ts#L11)
 
 ___
 
@@ -98,7 +111,7 @@ ___
 
 #### Defined in
 
-[const.ts:66](https://github.com/zimmed/const/blob/f05162f/src/const.ts#L66)
+[const.ts:66](https://github.com/zimmed/const/blob/16363f1/src/const.ts#L66)
 
 ___
 
@@ -125,7 +138,7 @@ ___
 
 #### Defined in
 
-[const.ts:33](https://github.com/zimmed/const/blob/f05162f/src/const.ts#L33)
+[const.ts:33](https://github.com/zimmed/const/blob/16363f1/src/const.ts#L33)
 
 ___
 
@@ -164,4 +177,4 @@ ___
 
 #### Defined in
 
-[const.ts:61](https://github.com/zimmed/const/blob/f05162f/src/const.ts#L61)
+[const.ts:61](https://github.com/zimmed/const/blob/16363f1/src/const.ts#L61)

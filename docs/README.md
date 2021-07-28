@@ -4,7 +4,7 @@
 
 A simple library for managing Constants in project features.
 
-> [Documentation](docs/README.md)
+> [Typedocs](docs/modules.md)
 
 ![Jest Branch Coverage](coverage/badge-branches.svg)
 ![Jest Function Coverage](coverage/badge-functions.svg)

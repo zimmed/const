@@ -70,19 +70,16 @@ export function createConstList<T extends string>(...keys: T[]) {
   return keys.reduce((acc, k) => ({ ...acc, [k]: createConst(k, {}) }), {} as R);
 }
 
-createConstMap.strict = createConstMapStrict;
-createConstMap.typed = createConstMapStrict;
+export default {
+  create: createConst,
 
-export default class Const {
-  static create = createConst;
+  createMap: createConstMap,
 
-  static createMap = createConstMap;
+  createTypedMap: createConstMapStrict,
 
-  static createTypedMap = createConstMapStrict;
+  createMapStrict: createConstMapStrict,
 
-  static createMapStrict = createConstMapStrict;
+  createStrictMap: createConstMapStrict,
 
-  static createStrictMap = createConstMapStrict;
-
-  static list = createConstList;
-}
+  list: createConstList,
+};
