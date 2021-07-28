@@ -1,4 +1,4 @@
-# TypeScript library starter
+# @zimmed/const
 
 A simple library for managing Constants in project features.
 
