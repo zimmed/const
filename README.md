@@ -2,6 +2,16 @@
 
 A simple library for managing Constants in project features.
 
+## Installation
+
+First, edit existing or create new .npmrc file in your project root, and add:
+
+`@zimmed:registry=https://npm.pkg.github.com`
+
+Then you can use:
+
+`$ npm i --save @zimmed/const`
+
 ## Usage
 
 ### Problem
